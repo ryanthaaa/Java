@@ -12,7 +12,7 @@ public class Test {
         System.out.print("Berapa umur Anda? ");
         int umur = input.nextInt();
 
-        System.out.println("Hallo " + nama + " umur kamu " + umur);
+        System.out.println("Hallo " + nama + ", umur kamu " + umur);
         input.close();
     }
 }

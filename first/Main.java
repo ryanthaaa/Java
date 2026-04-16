@@ -2,15 +2,15 @@ package first;
 
 public class Main {
     public static void main(String[] args) {
-        Pasien psn1 = new Pasien();
+        System.out.println();
 
-        psn1.nama = "Ryan Gosling";
-        System.out.println("Nama : " + psn1.nama);
-
-        Pasien psn2 = new Pasien();
-
-        psn2.nama = "Dika Rektor";
-        System.out.println("Nama : " + psn2.nama);
+        Pasien psn1 = new Pasien("A0150001", "Mayday", "Demam", 26);
+        
+        System.out.println("No RM       : " + psn1.noRm);
+        System.out.println("Nama        : " + psn1.nama);
+        System.out.println("Diagnosa    : " + psn1.diagnosa);
+        System.out.println("Umur        : " + psn1.umur);
+        
     }
 
 }

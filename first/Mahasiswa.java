@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 public class Mahasiswa {
     public static void main(String[] args) {
-        System.out.println();
-
         String nama;
         int umur;
         int angkatan;
@@ -15,27 +13,21 @@ public class Mahasiswa {
         Scanner input = new Scanner(System.in);
 
         System.out.println("<======== INPUT DATA MHS =======>");
-
         System.out.print("Siapa nama Anda?          : ");
         nama = input.nextLine();
-
         System.out.print("Berapa umur Anda?         : ");
-        umur = input.nextInt();
-        
+        umur = input.nextInt();    
         System.out.print("Angkatan ke-berapa Anda?  : ");
         angkatan = input.nextInt();
-
         input.nextLine();
         System.out.print("Apa prodi Anda?           : ");
         prodi = input.nextLine();
-
 
         if (umur >= 18) {
             statusUmur = "Dewasa";
         }else {
             statusUmur = "Muda";
         }
-
         if (umur > 22 && angkatan > 2025) {
             statusMhs = "In Danger";
         } else if (umur < 22 && angkatan <= 2025) {
@@ -52,8 +44,6 @@ public class Mahasiswa {
         System.out.println("Prodi Mahasiswa         : " + prodi);
         System.out.println("Status Umur Mahasiswa   : " + statusUmur);
         System.out.println("Status Kuliah Mahasiswa : " + statusMhs);
-
         input.close();
     }
 }
-
